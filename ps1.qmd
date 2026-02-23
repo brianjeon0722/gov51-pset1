@@ -12,7 +12,19 @@ header-includes:
 
 ### 1 Project Set Up
 
-Need immense help with Github.
+[Click here for Github](https://github.com/brianjeon0722/gov51-pset1/tree/main)
+
+1. Done.
+
+2. Done.
+
+3. Done.
+
+4. Done.
+
+5. Done.
+
+6. Done.
 
 ### 2 Get to Know Your Data
 
@@ -257,7 +269,7 @@ summary_table02 %>%
 
 ```
 
-5. 
+5. Done.
 
 \newpage
 
