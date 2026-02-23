@@ -312,7 +312,7 @@ ggsave("output/commute_histogram.png")
 ```
 
 
-5. 
+5. Done.
 
 \newpage
 
