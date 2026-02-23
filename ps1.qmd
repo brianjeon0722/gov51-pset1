@@ -176,10 +176,7 @@ acs2024_02 %>%
 \begin{itemize} 
 \item I chose to remove individuals with no commute time since they don't actually commute to work or have invalid data. 
 \item I also chose to remove individuals who were not employed (since you can't commute to work if you don't work!).
-\item I had no age restrictions since it's plausible that a young person commutes and works (minimum age of removing the above is 16 which is reasonable).
-\item I had no income restrictions since it's plausible that someone who commutes to work can have negative or even zero income if they make poor financial decisions. 
-\item I had no education restriction since someone with no or lots of education can both commute to work.
-\item I had no sex restriction since both women and men can commute to work.
+\item I had no age, income, education, or sex restrictions since these do not implicate out to whether someone commutes to work (especially because the minimum age value is 16). 
 \end{itemize} 
 
 ```{r}
@@ -326,7 +323,7 @@ weighted.mean(commuters$TRANTIME, commuters$PERWT)
 
 ```
 
-2. The weighted mean (27.19) is very very very slightly lower than the mean in Section 3 (27.22). 
+2. The weighted mean (27.19) is very very very slightly lower than the mean in Section 3 (27.22) by 0.03.
 
 3. The weighted mean represents the average where data points that are more frequently occurring are weighed more. In this case, because PERWT represents the number of people who have a certain row of values, the weighted average gives a better estimate of a person-level average versus the non-weighted mean which simply calculating the average commuting time flatly across unique individuals which doesn't take into account the proportion of different demographics. These values may differ if many people are represented by a single set of data but there are many unique sets of data that do not represent many people (ex: imagine commuting times for 90% of the population is 10 min and all the other data align for these 90% people, the weighted average would take that into account but the flat average would treat that 10 minute data as just one person).
 ---
